@@ -7,11 +7,7 @@ function onInputChange(event) {
     inputRef.classList.remove("invalid");
     inputRef.classList.add("valid");
     return;
-  } else if (event.currentTarget.value.length > 6) {
-    inputRef.classList.add("invalid");
-    return;
   }
   
-  inputRef.classList.remove("valid");
-  inputRef.classList.remove("invalid");
+  inputRef.classList.add("invalid");
 }
